@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/aegis/__init__.py
+src/aegis/__main__.py
+src/aegis/cli.py
+src/aegislang.egg-info/PKG-INFO
+src/aegislang.egg-info/SOURCES.txt
+src/aegislang.egg-info/dependency_links.txt
+src/aegislang.egg-info/entry_points.txt
+src/aegislang.egg-info/top_level.txt
