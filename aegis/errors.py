@@ -1,3 +1,11 @@
 """Diagnostic errors for AegisLang."""
 
-# TODO: Define diagnostics that include source line and column information.
+
+class AegisSyntaxError(Exception):
+    """A syntax error tied to a location in AegisLang source code."""
+
+    def __init__(self, message: str, line: int, column: int) -> None:
+        self.message = message
+        self.line = line
+        self.column = column
+        super().__init__(f"SyntaxError at line {line}, column {column}: {message}")
