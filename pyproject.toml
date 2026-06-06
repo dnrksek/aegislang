@@ -5,11 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aegislang"
 version = "0.1.0"
-description = "AegisLang experimental programming language"
+description = "A small statically typed language for human-AI collaborative programming"
+readme = "README.md"
 requires-python = ">=3.11"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
 
 [project.scripts]
 aegis = "aegis.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["aegis*"]

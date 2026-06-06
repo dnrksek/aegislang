@@ -1,0 +1,8 @@
+let name: String = "Aegis"
+let score: Int = 85
+
+if score >= 80 {
+    print("pass")
+} else {
+    print("fail")
+}
